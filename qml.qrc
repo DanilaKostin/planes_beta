@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Plane.qml</file>
+        <file>Gamemenu.qml</file>
+        <file>fon.jpg</file>
+        <file>red_plane.png</file>
+        <file>Roket.qml</file>
+        <file>Enemy.qml</file>
+        <file>enemy.png</file>
+        <file>nlo.png</file>
+    </qresource>
+</RCC>
