@@ -1,7 +1,7 @@
 import QtQuick 2.0
 
 Rectangle {
-    id: mroket
+    id: mroket  //Решил не заморачиваться над текстурой ракеты - пусть будем красный круг
     color: "red"
     radius: 5
     width: 10
@@ -11,7 +11,7 @@ Rectangle {
         interval: 40;running: true; repeat: true;
 
         onTriggered:{
-            if (mroket.x > 1200 || mroket.x < -20)
+            if (mroket.x > 1200 || mroket.x < -20) //Если ракета зашла в данные промежутки на карте, то останавливается (иначе бы она могла прилететь обратно по нажатию мышкой) )
             {
                 r_x = 0
                 r_y = 0
@@ -22,8 +22,8 @@ Rectangle {
                 r_x = 0
                 r_y = 0
             }
-            mroket.x +=2*r_x
-            mroket.y +=2*r_y
+            mroket.x +=r_x //Добавляем к координатам ракеты скорость
+            mroket.y +=r_y
 
         }
     }
